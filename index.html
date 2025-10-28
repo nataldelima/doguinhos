@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -12,24 +12,35 @@
     <title>Doguinho's</title>
 </head>
 
-<body>
-    <div class="container">
-        <header class="sticky-top bg-light d-flex flex-wrap justify-content-center py-3 mb-5 border-bottom">
+<body data-bs-spy="scroll" data-bs-target="#menu">
+    <div id="topo" class="container">
+        <header class="sticky-top d-flex flex-wrap justify-content-center py-3 mb-5 border-bottom"
+            style="background-color: #fff;">
             <a href="/"
                 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <use xlink:href="#bootstrap"></use>
 
                 <span class="fs-4 fw-bold material-symbols-outlined">
                     sound_detection_dog_barking
                 </span> Doguinho's</span>
             </a>
+            <ul id="menu" class="nav nav-pills form-check form-switch me-5">
 
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Preços</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                <li class="nav-item"><span class="material-symbols-outlined nav-link" id="icone-modo">
+                        light_mode
+                    </span></li>
+
+                <div class="form-check form-switch me-5 pt-2 align-middle">
+
+                    <li class="nav-item "><input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
+                    </li>
+                </div>
+
+
+                <li class="nav-item"><a href="#topo" class="nav-link" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#precos" class="nav-link">Preços</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
         </header>
 
@@ -43,8 +54,8 @@
                         dolores doloribus
                         deleniti iste eos, nihil est tempore qui nostrum ab, illo dignissimos similique ratione dolorum
                         praesentium veritatis quod.</p>
-                    <a href="#" class="btn btn-primary mt-5 w-50 p-4 fw-bold">Agendar Consulta <span
-                            class="material-symbols-outlined align-middle">
+                    <a class="btn btn-primary mt-5 w-50 p-4 fw-bold" onclick="sendWhatsAppMessage()">Agendar
+                        Consulta <span class="material-symbols-outlined align-middle">
                             arrow_right_alt
                         </span></a>
                 </div>
@@ -89,9 +100,9 @@
                 </div><!-- /.col-lg-4 -->
             </div>
         </section>
-        <section id="precos">
+        <section id="precos" class=" mt-5 pt-5">
             <div class="pricing-header pt-5 mt-5 text-center">
-                <h2 class="display-5 fw-bold">Preço</h2>
+                <h2 class="display-5 fw-bold">Preços</h2>
                 <p class="fs-5 mb-5 text-muted">Quickly build an effective pricing table for your potential
                     customers with this
                     Bootstrap example. It’s built with default Bootstrap components and utilities with little
@@ -260,9 +271,9 @@
                         <p><span class="material-symbols-outlined align-middle">
                                 mail
                             </span> email@provedor.com</p>
-                        <button class="mt-4 w-75 p-3 btn btn-success" type="button"><i class="bi bi-whatsapp"></i>
-                            Chamar
-                            Whatsapp</button>
+                        <button class="mt-4 w-75 p-3 btn btn-success" type="button" onclick="sendWhatsAppMessage()"><i
+                                class="bi bi-whatsapp"></i>
+                            Chamar no Whatsapp</button>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -279,11 +290,24 @@
 
         </section>
 
+        <footer class="container mt-5 p-5">
+            <p class="float-end"><a href="#">Ir para o topo</a></p>
+            <p> © 2017-2022 <span class="fs-4 fw-bold material-symbols-outlined">
+                    sound_detection_dog_barking
+                </span> Doguinho's - Clínica Veterinária</span> <a class="ms-5" href="#">Política de Privacidade</a> ·
+                <a href="#">Termos de Uso</a>
+            <p class="text-center">Feito com ❤️ por <a href="https://nataldelima.github.io" target="_blank"
+                    style="text-decoration: none;"><img src="img/logo.svg" style="height: 28px; ;"> Natal
+                    Lima</p>
+            </p>
+        </footer>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="js/switch.js"></script>
 </body>
 
 </html>
