@@ -10,6 +10,38 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Doguinho's</title>
+
+    <style>
+        /* Esconde o menu por padrão em telas pequenas */
+        #menu {
+            transition: all 0.3s ease-in-out;
+        }
+
+        #menu.show {
+            display: flex !important;
+            flex-direction: column;
+
+            width: 100%;
+            border-top: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        #menuToggle {
+            margin-left: 40px;
+            display: flex;
+            justify-content: end;
+
+        }
+
+        @media (max-width: 768px) {
+            #menu {
+                display: none !important;
+            }
+        }
+    </style>
+
+
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#menu">
@@ -23,6 +55,11 @@
                     sound_detection_dog_barking
                 </span> Doguinho's</span>
             </a>
+
+            <button class="navbar-toggler d-md-none border-0 bg-transparent" type="button" id="menuToggle">
+                <span class="material-symbols-outlined fs-2">menu</span>
+            </button>
+
             <ul id="menu" class="nav nav-pills form-check form-switch me-5">
 
                 <li class="nav-item"><span class="material-symbols-outlined nav-link" id="icone-modo">

@@ -52,7 +52,6 @@ doguinhos/
 ```
 
 
-
 ## 🌐 Demonstração  
 
 🔗 **Acesse aqui:** [nataldelima.github.io/doguinhos](https://nataldelima.github.io/doguinhos)  

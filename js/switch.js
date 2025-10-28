@@ -30,6 +30,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
+
+// Menu toggle para dispositivos móveis
+const menuToggle = document.getElementById('menuToggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+
+    // Troca o ícone entre menu e close
+    const icon = menuToggle.querySelector('.material-symbols-outlined');
+    icon.textContent = menu.classList.contains('show') ? 'close' : 'menu';
+});
+
+
+
+
+
+
 //Identificar o sistema operacional
 
 function detectOS() {
