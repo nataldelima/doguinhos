@@ -25,11 +25,6 @@ Alternância de cores entre `.bg-light` e `.bg-dark`, mantendo contraste e legib
 ✅ **📱 Design Responsivo**  
 Interface adaptada para **mobile, tablet e desktop** com uso de **media queries** e **Bootstrap Grid**.
 
-✅ **🎥 Banner com Vídeo de Fundo**  
-Vídeo em `<header>` com sobreposição de texto e botão de contato, criando um destaque visual.
-
-✅ **🖼️ Carrossel Dinâmico (Swiper.js)**  
-Projetos carregados dinamicamente via **JavaScript**, com autoplay e navegação interativa.
 
 ✅ **💬 Contato via WhatsApp**  
 Formulário de contato que detecta automaticamente o **sistema operacional do usuário** (Android, iOS ou Web) e abre a conversa diretamente no app.
@@ -52,8 +47,7 @@ doguinhos/
 │ ├── logo.svg
 │ ├── doguinhos.png
 │ ├── video-fundo.mp4
-│ ├── video-fundo.webm
-│ └── poster-video.jpg
+│ └── video-fundo.webm
 └── README.md
 ```
 
